@@ -15,11 +15,17 @@
 body {
   color: #212121;
   font-family: var(--main-font-family);
+  vertical-align: top;
+  letter-spacing: 3%;
 }
 
 /* ==========HEADER=========== */
 
 .logo {
+  font-style: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  line-height: 100%;
   font-family: var(--second-font-family);
 }
 
@@ -28,29 +34,31 @@ body {
 }
 .navigation {
   font-style: 500;
-  font-size: 14sp;
+  font-size: 14px;
   line-height: 1.14;
   line-height: 100%;
+  letter-spacing: 2%;
+}
+.contacts-item {
+  list-style: none;
 }
 .item-navigation:focus,
 .item-navigation:hover {
   color: var(--accent-color);
 }
+/*.item-navigation:active { 
+  color: var(--accent-color);
+ */
 .contacts-item {
   font-style: 500;
-  font-size: 14sp;
+  font-size: 14px;
   line-height: 1.14;
   line-height: 100%;
+  letter-spacing: 2%;
+  color: var(--second-colour);
 }
 .contacts-item:hover,
 .contacts-item:focus {
-  color: var(--accent-color);
-}
-.contacts-item-phone {
-  color: var(--second-colour);
-}
-.contacts-item-phone:hover,
-.contacts-item-phone:focus {
   color: var(--accent-color);
 }
 
@@ -58,18 +66,24 @@ body {
 /* ==========HERO========== */
 .hero-main {
   font-style: 900;
-  font-size: 44sp;
+  font-size: 44px;
   line-height: 1.36;
   line-height: 116%;
   text-align: center;
-  /* color: #ffffff; */
+  letter-spacing: 6%;
+  color: #ffffff;
 }
 .button {
   font-style: 700;
-  font-size: 16sp;
+  font-size: 16px;
   line-height: 1.88;
   line-height: 160%;
   text-align: center;
+  vertical-align: center;
+  letter-spacing: 6%;
+  margin: 0 auto;
+  display: block;
+  font-family: inherit;
   color: #ffffff;
   background-color: var(--accent-color);
   cursor: pointer;
@@ -78,52 +92,70 @@ body {
 .button:focus {
   background-color: #188ce8;
 }
-
+.hero {
+  background-color: #2f303a;
+}
 /* ==========END HERO========== */
 /* ==========FIRST PAGE========== */
+
 .paragraph-item-title {
   font-style: 700;
-  font-size: 14sp;
+  font-size: 14px;
   line-height: 1.14;
   line-height: 100%;
 }
 .paragraph-item-text {
-  font-size: 14sp;
+  font-size: 14px;
   line-height: 1.7;
   line-height: 146%;
   color: var(--second-colour);
 }
 .title {
   font-style: 700;
-  font-size: 36sp;
-  line-height: 42sp;
+  font-size: 36px;
+  line-height: 1.67;
   line-height: 100%;
   text-align: center;
 }
 .second-title {
   font-style: 500;
-  font-size: 16sp;
-  line-height: 1.9;
+  font-size: 16px;
+  line-height: 1.19;
   line-height: 100%;
   text-align: center;
 }
+.command {
+  background-color: #f5f4fa;
+}
 .command-list-text {
-  font-size: 16sp;
-  line-height: 1.9;
+  font-size: 16px;
+  line-height: 1.19;
   line-height: 100%;
   text-align: center;
   color: var(--second-colour);
 }
+
 /* ==========END FIRST PAGE========== */
 /* ==========SECOND PAGE========== */
+
 .second-button {
   font-style: 500;
-  font-size: 16sp;
+  font-size: 16px;
   line-height: 1.63;
   line-height: 139%;
   text-align: center;
+  font-family: inherit;
   background-color: #f5f4fa;
   cursor: pointer;
+}
+.second-button-all {
+  font-style: 500;
+  font-size: 16px;
+  line-height: 1.63px;
+  line-height: 139%;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
 .second-button:focus,
 .second-button:hover {
@@ -132,12 +164,13 @@ body {
 }
 .portfolio-title {
   font-style: 700;
-  font-size: 18sp;
+  font-size: 18px;
   line-height: 2;
   line-height: 171%;
+  letter-spacing: 6%;
 }
 .portfolio-text {
-  font-size: 16sp;
+  font-size: 16px;
   line-height: 1.88;
   line-height: 160%;
   color: var(--second-colour);
@@ -145,22 +178,32 @@ body {
 
 /* ==========END SECOND PAGE========== */
 /* ==========FOOTER========== */
+
 .address {
-  font-size: 14sp;
-  line-height: 1.7;
+  font-size: 14px;
+  line-height: 1.71;
   line-height: 146%;
-  /* color: #ffffff; */
+  color: #ffffff;
   font-style: normal;
 }
 .footer-link {
-  font-size: 14sp;
-  line-height: 1.7;
+  font-size: 14px;
+  line-height: 1.71;
   line-height: 146%;
   font-style: normal;
-  color: var(--second-colour);
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-link:hover,
 .footer-link:focus {
+  color: #ffffff;
+}
+.footer {
+  background-color: #2f303a;
+}
+.logo-footer {
+  color: #ffffff;
+}
+.logo-footer span {
   color: var(--accent-color);
 }
 /* ==========END FOOTER========== */
