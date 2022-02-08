@@ -16,16 +16,19 @@ body {
   color: #212121;
   font-family: var(--main-font-family);
   vertical-align: top;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 }
 
 /* ==========HEADER=========== */
 
+.active {
+  color: var(--accent-color);
+}
+
 .logo {
-  font-style: 700;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  line-height: 100%;
   font-family: var(--second-font-family);
 }
 
@@ -33,54 +36,48 @@ body {
   color: var(--accent-color);
 }
 .navigation {
-  font-style: 500;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  line-height: 100%;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 .contacts-item {
   list-style: none;
 }
-.item-navigation:focus,
-.item-navigation:hover {
+.item-navigation-link:focus,
+.item-navigation-link:hover {
   color: var(--accent-color);
 }
-/*.item-navigation:active { 
-  color: var(--accent-color);
- */
-.contacts-item {
-  font-style: 500;
+.contacts-item-link {
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  line-height: 100%;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: var(--second-colour);
 }
-.contacts-item:hover,
-.contacts-item:focus {
+.contacts-item-link:hover,
+.contacts-item-link:focus {
   color: var(--accent-color);
 }
 
 /* ==========END HEADER========== */
 /* ==========HERO========== */
 .hero-main {
-  font-style: 900;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  line-height: 116%;
   text-align: center;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #ffffff;
 }
 .button {
-  font-style: 700;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  line-height: 160%;
   text-align: center;
   vertical-align: center;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   margin: 0 auto;
   display: block;
   font-family: inherit;
@@ -99,29 +96,26 @@ body {
 /* ==========FIRST PAGE========== */
 
 .paragraph-item-title {
-  font-style: 700;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  line-height: 100%;
+  text-transform: uppercase;
 }
 .paragraph-item-text {
   font-size: 14px;
   line-height: 1.7;
-  line-height: 146%;
   color: var(--second-colour);
 }
 .title {
-  font-style: 700;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
-  line-height: 100%;
   text-align: center;
 }
 .second-title {
-  font-style: 500;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  line-height: 100%;
   text-align: center;
 }
 .command {
@@ -130,7 +124,6 @@ body {
 .command-list-text {
   font-size: 16px;
   line-height: 1.19;
-  line-height: 100%;
   text-align: center;
   color: var(--second-colour);
 }
@@ -139,22 +132,21 @@ body {
 /* ==========SECOND PAGE========== */
 
 .second-button {
-  font-style: 500;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  line-height: 139%;
   text-align: center;
   font-family: inherit;
   background-color: #f5f4fa;
   cursor: pointer;
 }
 .second-button-all {
-  font-style: 500;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.63px;
-  line-height: 139%;
+  line-height: 1.63;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
   background-color: var(--accent-color);
 }
 .second-button:focus,
@@ -163,16 +155,14 @@ body {
   background-color: var(--accent-color);
 }
 .portfolio-title {
-  font-style: 700;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  line-height: 171%;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
-  line-height: 160%;
   color: var(--second-colour);
 }
 
@@ -182,14 +172,12 @@ body {
 .address {
   font-size: 14px;
   line-height: 1.71;
-  line-height: 146%;
   color: #ffffff;
   font-style: normal;
 }
 .footer-link {
   font-size: 14px;
   line-height: 1.71;
-  line-height: 146%;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
